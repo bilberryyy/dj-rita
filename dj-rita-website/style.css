@@ -1,0 +1,343 @@
+:root {
+    --pink: #E8B4C8;
+    --milk: #F8F5F2;
+    --dark: #151515;
+    --gray: #909090;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--milk);
+}
+
+.header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 30px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 10;
+}
+
+.logo {
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--pink);
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(to top,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.15));
+}
+
+.hero-content {
+    position: absolute;
+
+    left: 8%;
+    bottom: 10%;
+
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hero-content h1 {
+    font-family: 'Cormorant Garamond', serif;
+
+    color: white;
+
+    font-size: clamp(4rem, 10vw, 8rem);
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    line-height: 0.9;
+}
+
+.hero-content p {
+    color: white;
+
+    letter-spacing: 4px;
+
+    font-size: 0.9rem;
+}
+
+.hero-btn {
+    margin-top: 10px;
+
+    width: fit-content;
+
+    padding: 14px 30px;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    background: var(--pink);
+
+    color: var(--dark);
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+    box-shadow: 0 10px 30px rgba(232, 180, 200, .25);
+}
+
+.hero-btn:hover {
+    transform: translateY(-2px);
+
+    background: #f1c5d7;
+}
+
+/* ABOUT */
+
+.about {
+    background: var(--milk);
+
+    padding: 120px 8%;
+}
+
+.section-title {
+    font-size: 0.9rem;
+
+    letter-spacing: 4px;
+
+    color: var(--gray);
+
+    margin-bottom: 30px;
+}
+
+.about-text {
+    max-width: 900px;
+}
+
+.about-text p {
+    font-size: 1.3rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+    color: var(--dark);
+}
+
+/* EVENTS */
+
+.events {
+    padding: 120px 8%;
+    background: #F8F5F2;
+}
+
+.events h2 {
+    margin-bottom: 50px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 4rem;
+
+    color: var(--dark);
+}
+
+.event {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 35px 0;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    transition: .3s;
+
+    flex-wrap: wrap;
+}
+
+.event:hover {
+    padding-left: 15px;
+}
+
+.event-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.event h3 {
+    word-break: break-word;
+}
+
+.ticket-btn {
+    text-decoration: none;
+
+    background: var(--pink);
+
+    color: var(--dark);
+
+    padding: 12px 22px;
+
+    border-radius: 999px;
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.ticket-btn:hover {
+    transform: translateY(-2px);
+
+    background: #f1c5d7;
+}
+
+.event-status {
+    color: var(--gray);
+
+    font-size: .9rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.date {
+    color: var(--pink);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.event h3 {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+    background: var(--dark);
+
+    color: white;
+
+    padding: 80px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 50px;
+
+    flex-wrap: wrap;
+}
+
+.footer h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 3rem;
+
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #bcbcbc;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-right a:hover {
+    color: var(--pink);
+}
+
+.copyright {
+    background: #111;
+
+    color: #888;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: .9rem;
+}
+
+@media (max-width: 768px) {
+
+    .event {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .events h2 {
+        font-size: 3rem;
+    }
+
+}
