@@ -169,9 +169,10 @@
                 <p>SOUTHAMPTON</p>
             </div>
     
-            <span class="event-status">
-                COMING SOON
-            </span>
+            <a href="https://www.fatsoma.com/e/gdx0r2kc/southampton-latinoland-freshers-360-edition?fbclid=PARlRTSAUNL05wZG9mAmZkaWQWUOB96n6sYcG58r6KhEhm7PA2SmJYxGV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp68CZG0C7cDsJdnKqxFKRHbx4e0Q6NU5zicVQ7uuJbBXx3aBrobh0NOn2XQU_aem_Hv3y9wszm9_vwCKmBmzd7A" target="_blank"
+                rel="noopener noreferrer" class="ticket-btn">
+                GET TICKETS →
+            </a>
         </div>
     
         <!-- 08 OCT -->
@@ -271,6 +272,18 @@
     <div class="copyright">
         Made with ♡ by puresshhka
     </div>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+
+            if (window.scrollY > 80) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 
 </body>
 

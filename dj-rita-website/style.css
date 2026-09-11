@@ -21,7 +21,7 @@ body {
 }
 
 .header {
-    position: absolute;
+    position: fixed;
 
     top: 0;
     left: 0;
@@ -34,13 +34,22 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    z-index: 10;
+    z-index: 1000;
+
+    transition:
+        background 0.4s ease,
+        color 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
 .logo {
     color: white;
+
     font-size: 1.2rem;
+
     letter-spacing: 2px;
+
+    transition: color 0.4s ease;
 }
 
 nav {
@@ -50,13 +59,36 @@ nav {
 
 nav a {
     color: white;
+
     text-decoration: none;
+
     font-size: 0.9rem;
-    transition: .3s;
+
+    transition: color 0.4s ease;
 }
 
 nav a:hover {
     color: var(--pink);
+}
+
+/* SCROLL */
+
+.header.scrolled {
+    background: rgba(248, 245, 242, 0.75);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.header.scrolled .logo,
+.header.scrolled nav a {
+    color: var(--dark);
+}
+
+.header.scrolled nav a:hover {
+    color: #C98FA8;
 }
 
 /* HERO */
