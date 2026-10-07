@@ -15,6 +15,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -24,13 +26,41 @@
             DJ RITA
         </div>
     
-        <nav>
+        <nav class="desktop-nav">
             <a href="#about">About</a>
             <a href="#events">Events</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#music">Music</a>
+            <a href="#press-kit">Press Kit</a>
+            <a href="#booking">Booking</a>
             <a href="#socials">Socials</a>
         </nav>
     
+        <button class="mobile-menu-button" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    
     </header>
+    
+    <div class="mobile-menu">
+    
+        <button class="mobile-menu-close" type="button">
+            &times;
+        </button>
+    
+        <nav class="mobile-nav">
+            <a href="#about">ABOUT</a>
+            <a href="#events">EVENTS</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#music">MUSIC</a>
+            <a href="#press-kit">PRESS KIT</a>
+            <a href="#booking">BOOKING</a>
+            <a href="#socials">SOCIALS</a>
+        </nav>
+    
+    </div>
 
     <section class="hero">
 
@@ -81,48 +111,6 @@
     
         <h2>UPCOMING EVENTS</h2>
     
-        <!-- 02 OCT -->
-        <div class="event">
-            <div class="event-info">
-                <span class="date">02 OCT</span>
-                <h3>FUEGO</h3>
-                <p>SOUTHAMPTON</p>
-            </div>
-    
-            <a href="https://www.fatsoma.com/e/a1ea6jxd/fuego-southampton-s-reggaeton-latin-night" target="_blank" rel="noopener noreferrer"
-                class="ticket-btn">
-                GET TICKETS →
-            </a>
-        </div>
-    
-        <!-- 03 OCT -->
-        <div class="event">
-            <div class="event-info">
-                <span class="date">03 OCT</span>
-                <h3>LATINO LAND</h3>
-                <p>SOUTHAMPTON</p>
-            </div>
-    
-            <a href="https://www.fatsoma.com/e/gdx0r2kc/southampton-latinoland-freshers-360-edition?fbclid=PARlRTSAUNL05wZG9mAmZkaWQWUOB96n6sYcG58r6KhEhm7PA2SmJYxGV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp68CZG0C7cDsJdnKqxFKRHbx4e0Q6NU5zicVQ7uuJbBXx3aBrobh0NOn2XQU_aem_Hv3y9wszm9_vwCKmBmzd7A" target="_blank"
-                rel="noopener noreferrer" class="ticket-btn">
-                GET TICKETS →
-            </a>
-        </div>
-    
-        <!-- 08 OCT -->
-        <div class="event">
-            <div class="event-info">
-                <span class="date">08 OCT</span>
-                <h3>FIESTA THURSDAYS</h3>
-                <p>PORTSMOUTH</p>
-            </div>
-    
-            <a href="https://site.fourvenues.com/en/dj-rita/events/fiesta-thursdays--fiesta-balkan-08-10-2026-7H7G"
-                target="_blank" rel="noopener noreferrer" class="ticket-btn">
-                GET TICKETS →
-            </a>
-        </div>
-    
         <!-- 10 OCT -->
         <div class="event">
             <div class="event-info">
@@ -165,6 +153,186 @@
     
     </section>
 
+    <section id="gallery" class="gallery">
+    
+        <div class="section-title">
+            GALLERY
+        </div>
+    
+        <div class="gallery-grid">
+    
+            <img src="assets/gallery/gallery1.jpg" alt="DJ Rita">
+    
+            <img src="assets/gallery/gallery2.jpg" alt="DJ Rita">
+    
+            <img src="assets/gallery/gallery3.jpg" alt="DJ Rita">
+    
+            <img src="assets/gallery/gallery4.jpg" alt="DJ Rita">
+    
+            <img src="assets/gallery/gallery5.jpg" alt="DJ Rita">
+    
+            <img src="assets/gallery/gallery6.jpg" alt="DJ Rita">
+    
+        </div>
+    
+    </section>
+
+    <div class="lightbox">
+    
+        <button class="lightbox-close">&times;</button>
+    
+        <button class="lightbox-prev">&#10094;</button>
+    
+        <img class="lightbox-image" src="" alt="DJ Rita">
+    
+        <button class="lightbox-next">&#10095;</button>
+    
+    </div>
+
+    <section id="music" class="music">
+    
+        <div class="section-title">
+            MUSIC
+        </div>
+    
+        <div class="music-content">
+    
+            <div class="music-word">
+                MIXES
+            </div>
+    
+            <div class="music-info">
+    
+                <h2>HEAR RITA.</h2>
+    
+                <p>
+                    Latest mixes, sets & sounds.
+                </p>
+    
+                <a href="https://t.me/ritaareshka" target="_blank" class="music-link">
+                    LISTEN ON TELEGRAM
+                    <span>→</span>
+                </a>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <section id="press-kit" class="press-kit">
+    
+        <div class="section-title">
+            PRESS KIT
+        </div>
+    
+        <div class="press-accent"></div>
+    
+        <div class="press-content">
+    
+            <h2>DJ RITA</h2>
+    
+            <p class="press-subtitle">
+                UK-BASED FEMALE DJ
+            </p>
+    
+            <p class="press-description">
+                Open-format DJ available for clubs, festivals,
+                private events and international shows.
+            </p>
+    
+            <a href="YOUR-PRESS-KIT-LINK" target="_blank" class="press-link">
+                VIEW PRESS KIT
+                <span>→</span>
+            </a>
+    
+        </div>
+    
+    </section>
+
+    <section id="booking" class="booking">
+    
+        <div class="section-title">
+            BOOKING
+        </div>
+    
+        <div class="booking-content">
+    
+            <div class="booking-intro">
+    
+                <h2>LET'S<br>WORK TOGETHER.</h2>
+    
+                <p>
+                    For bookings, events, collaborations
+                    and other enquiries, get in touch.
+                </p>
+    
+            </div>
+    
+            <form class="booking-form" id="booking-form">
+    
+                <div class="form-group">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="venue">VENUE / COMPANY</label>
+                    <input type="text" id="venue" name="venue" placeholder="Venue or company">
+                </div>
+    
+                <div class="form-row">
+    
+                    <div class="form-group">
+                        <label for="date">EVENT DATE</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="type">EVENT TYPE</label>
+                        <select id="type" name="type">
+                            <option value="" selected disabled>
+                                Select type
+                            </option>
+                            <option value="club">Club Event</option>
+                            <option value="festival">Festival</option>
+                            <option value="private">Private Event</option>
+                            <option value="brand">Brand Collaboration</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+    
+                </div>
+    
+                <div class="form-group">
+                    <label for="location">LOCATION</label>
+                    <input type="text" id="location" name="location" placeholder="City / Country">
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="message" rows="5"
+                        placeholder="Tell us a little about your event..."></textarea>
+                </div>
+
+                <p class="booking-message" id="booking-message"></p>
+    
+                <button type="submit" class="booking-button">
+                    SEND BOOKING REQUEST
+                    <span>→</span>
+                </button>
+    
+            </form>
+    
+        </div>
+    
+    </section>
+
     <footer id="socials" class="footer">
     
         <div class="footer-left">
@@ -173,27 +341,27 @@
         </div>
     
         <div class="footer-right">
-    
-            <a href="https://www.instagram.com/ritareshka/" target="_blank" rel="noopener noreferrer">
-                Instagram
+        
+            <a href="https://www.instagram.com/ritareshka/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
             </a>
-    
-            <a href="https://www.tiktok.com/@ritareshka" target="_blank" rel="noopener noreferrer">
-                TikTok
+        
+            <a href="https://www.tiktok.com/@ritareshka" target="_blank">
+                <i class="fa-brands fa-tiktok"></i>
             </a>
-    
-            <a href="https://www.youtube.com/@ritareshka" target="_blank" rel="noopener noreferrer">
-                YouTube
+        
+            <a href="https://www.youtube.com/@ritareshka" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
             </a>
-
-            <a href="https://t.me/ritaareshka" target="_blank" rel="noopener noreferrer">
-                Telegram
+        
+            <a href="https://t.me/ritaareshka" target="_blank">
+                <i class="fa-brands fa-telegram"></i>
             </a>
-
-            <a href="https://www.snapchat.com/add/rita_reshka" target="_blank" rel="noopener noreferrer">
-                Snapchat
+        
+            <a href="https://www.snapchat.com/add/rita_reshka" target="_blank">
+                <i class="fa-brands fa-snapchat"></i>
             </a>
-    
+        
         </div>
     
     </footer>
@@ -211,6 +379,184 @@
             } else {
                 header.classList.remove('scrolled');
             }
+        });
+    </script>
+
+    <script>
+        const galleryImages = document.querySelectorAll('.gallery-grid img');
+
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImage = document.querySelector('.lightbox-image');
+
+        const closeButton = document.querySelector('.lightbox-close');
+        const prevButton = document.querySelector('.lightbox-prev');
+        const nextButton = document.querySelector('.lightbox-next');
+
+        let currentImage = 0;
+
+
+        function showImage(index) {
+            currentImage = index;
+
+            lightboxImage.src = galleryImages[currentImage].src;
+            lightboxImage.alt = galleryImages[currentImage].alt;
+        }
+
+
+        galleryImages.forEach((image, index) => {
+
+            image.addEventListener('click', () => {
+
+                showImage(index);
+
+                lightbox.classList.add('active');
+
+            });
+
+        });
+
+
+        closeButton.addEventListener('click', () => {
+
+            lightbox.classList.remove('active');
+
+        });
+
+
+        nextButton.addEventListener('click', () => {
+
+            currentImage++;
+
+            if (currentImage >= galleryImages.length) {
+                currentImage = 0;
+            }
+
+            showImage(currentImage);
+
+        });
+
+
+        prevButton.addEventListener('click', () => {
+
+            currentImage--;
+
+            if (currentImage < 0) {
+                currentImage = galleryImages.length - 1;
+            }
+
+            showImage(currentImage);
+
+        });
+
+
+        lightbox.addEventListener('click', (event) => {
+
+            if (event.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+
+        });
+
+
+        document.addEventListener('keydown', (event) => {
+
+            if (!lightbox.classList.contains('active')) {
+                return;
+            }
+
+            if (event.key === 'Escape') {
+                lightbox.classList.remove('active');
+            }
+
+            if (event.key === 'ArrowRight') {
+                nextButton.click();
+            }
+
+            if (event.key === 'ArrowLeft') {
+                prevButton.click();
+            }
+
+        });
+    </script>
+
+    <script>
+        const bookingForm = document.getElementById('booking-form');
+        const bookingMessage = document.getElementById('booking-message');
+
+        bookingForm.addEventListener('submit', async (event) => {
+
+                event.preventDefault();
+                console.log("FORM SUBMITTED");
+
+                const formData = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    venue: document.getElementById('venue').value,
+                    date: document.getElementById('date').value,
+                    type: document.getElementById('type').value,
+                    location: document.getElementById('location').value,
+                    message: document.getElementById('message').value
+                };
+
+                try {
+
+                    const response = await fetch(
+                        'https://dj-rita-backend.onrender.com/api/bookings',
+                        {
+                            method: 'POST',
+
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+
+                            body: JSON.stringify(formData)
+                        }
+                    );
+
+                    const result = await response.text();
+
+                    if (response.ok) {
+                        bookingMessage.textContent = "Thank you! Your booking request has been sent.";
+                        bookingMessage.classList.remove('error');
+                        bookingMessage.classList.add('success');
+
+                        bookingForm.reset();
+                    } else {
+                        bookingMessage.textContent = "Something went wrong. Please try again.";
+                        bookingMessage.classList.remove('success');
+                        bookingMessage.classList.add('error');
+                    }
+
+                } catch (error) {
+
+                    console.error(error);
+
+                }
+
+            });
+    </script>
+
+    <script>
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const mobileMenuClose = document.querySelector('.mobile-menu-close');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-nav a');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
         });
     </script>
 
